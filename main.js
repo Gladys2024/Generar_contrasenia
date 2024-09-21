@@ -34,7 +34,7 @@ verificarSeguridad(password); // Validar seguridad de la contraseña validada
 function limpiar(){
     contrasena.value = '';
     cantidad.value = '';
-    seguridadTexto.innerTHML = '';  
+    seguridadTexto.innerHTML = '';  
 }
 
 function verificarSeguridad(password){
@@ -54,7 +54,7 @@ function verificarSeguridad(password){
         seguridad = 'Media';
     }
 
-    seguridadTexto.innerTHML = 'Seguridad de la contraseña: ${seguridad}';
+    seguridadTexto.innerHTML = 'Seguridad de la contraseña: ${seguridad}';
 
 }
 
