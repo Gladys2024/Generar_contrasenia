@@ -42,9 +42,9 @@ function verificarSeguridad(password){
 
                                       //  Criterios de seguridad
     const tieneMayuscula = /[A-Z]/.test(password);
-    const tieneMinuscula = /[a.z]/.test(password);
-    const tieneNumero = /|d/.test(password);
-    const tieneCaracterEspecial = /!@#$%^&*()/.test(password);
+    const tieneMinuscula = /[a-z]/.test(password);
+    const tieneNumero = /[d]/.test(password);
+    const tieneCaracterEspecial = /[!@#$%^&*()]/.test(password);
     const esLarga = password.length >= 8;
 
                               //  Determinar nivel de seguridad
@@ -58,8 +58,8 @@ function verificarSeguridad(password){
 
 }
 
-    botonGenerar.addEventListener('click, generar');
-    botonLimpiar.addEventListener('click, limpiar');
+    botonGenerar.addEventListener('click', generar);
+    botonLimpiar.addEventListener('click', limpiar);
 
 
 
