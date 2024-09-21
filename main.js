@@ -50,7 +50,8 @@ function verificarSeguridad(password){
                               //  Determinar nivel de seguridad
     if (tieneMayuscula && tieneMinuscula && tieneNumero && tieneCaracterEspecial && esLarga){
         seguridad = 'fuerte';
-    } else if ((tieneMayuscula || tieneMinuscula) && tieneNumero && esLarga){
+    } 
+    else if ((tieneMayuscula || tieneMinuscula) && tieneNumero && esLarga){
         seguridad = 'Media';
     }
 
@@ -58,7 +59,7 @@ function verificarSeguridad(password){
 
 }
 
-    botonGenerar.addEventListener('click', generar);
+    botonGenerar.addEventListener('click', password);
     botonLimpiar.addEventListener('click', limpiar);
 
 
