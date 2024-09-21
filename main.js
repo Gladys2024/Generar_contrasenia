@@ -54,7 +54,7 @@ function verificarSeguridad(password){
         seguridad = 'Media';
     }
 
-    seguridadTexto.innerHTML = "Seguridad de la contraseña: ${seguridad}";
+    seguridadTexto.innerHTML = Seguridad de la contraseña:${seguridad};
 
 }
 
