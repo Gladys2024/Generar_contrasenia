@@ -1,5 +1,5 @@
 let cantidad = document.getElementById('cantidad');
-let boton = document.getElementById('generar');
+let botonGenerar = document.getElementById('generar');
 let contrasena = document.getElementById('contrasena');
 let botonLimpiar = document.getElementById('limpiar');
 let seguridadTexto = document.getElementById('seguridad');
@@ -43,7 +43,7 @@ function verificarSeguridad(password){
                                       //  Criterios de seguridad
     const tieneMayuscula = /[A-Z]/.test(password);
     const tieneMinuscula = /[a-z]/.test(password);
-    const tieneNumero = /[d]/.test(password);
+    const tieneNumero = /\d/.test(password);
     const tieneCaracterEspecial = /[!@#$%^&*()]/.test(password);
     const esLarga = password.length >= 8;
 
@@ -54,7 +54,7 @@ function verificarSeguridad(password){
         seguridad = 'Media';
     }
 
-    seguridadTexto.innerHTML = 'Seguridad de la contraseña: ${seguridad}';
+    seguridadTexto.innerHTML = "Seguridad de la contraseña: ${seguridad}";
 
 }
 
