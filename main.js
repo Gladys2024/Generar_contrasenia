@@ -59,7 +59,7 @@ function verificarSeguridad(password){
 
 }
 
-    botonGenerar.addEventListener('click', password);
+    botonGenerar.addEventListener('click', generar);
     botonLimpiar.addEventListener('click', limpiar);
 
 
